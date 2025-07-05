@@ -127,7 +127,7 @@ document.getElementById('startButton').addEventListener('click', async () => {
   const session = new RealtimeSession(agent);
 
   try {
-    const res = await fetch('http://localhost:3000/session');
+    const res = await fetch('/api/session');
     const data = await res.json();
     const ephemeralKey = data.client_secret.value;
 
