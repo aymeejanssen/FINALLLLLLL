@@ -11,15 +11,15 @@
       rel="stylesheet"
     />
 
-    <!-- Tailwind CSS is bundled via Vite (no CDN needed) -->
+    <!-- ✅ Tailwind (built via Vite) -->
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
 
   <body
-r
     class="bg-gradient-to-br from-pink-100 via-purple-100 to-yellow-100 min-h-screen text-gray-800 font-sans antialiased"
   >
     <div id="app">
-      <!-- Feature Cards Section -->
+      <!-- ✅ Feature Cards Section -->
       <div class="mt-24 px-4 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 shadow-md text-white hover:bg-white/20 transition-all duration-300">
           <h3 class="text-xl font-semibold mb-3">❤️ Emotional Support</h3>
@@ -47,7 +47,7 @@ r
       </div>
     </div>
 
+    <!-- ✅ Script pointing to your main JS logic -->
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
-
