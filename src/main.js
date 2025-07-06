@@ -69,7 +69,20 @@ document.querySelector('#app').innerHTML = `
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-32 px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-32 px-4">
+  <div class="card text-center">
+    <div class="text-2xl font-semibold mb-3">❤️ Emotional Support</div>
+    <p class="text-sm font-light">Chat with our culturally-aware AI companion that understands your background, language, and emotional needs. Available 24/7 for judgment-free support.</p>
+  </div>
+  <div class="card text-center">
+    <div class="text-2xl font-semibold mb-3">🧠 Intelligent Coaching</div>
+    <p class="text-sm font-light">Receive personalized guidance and coping strategies powered by advanced AI. Get practical exercises and insights tailored to your unique situation.</p>
+  </div>
+  <div class="card text-center">
+    <div class="text-2xl font-semibold mb-3">💬 Instant Conversations</div>
+    <p class="text-sm font-light">Start meaningful conversations anytime you need support. No appointments, no waiting – your AI wellness companion is always ready to listen and help.</p>
+  </div>
+</div>
       <div class="bg-white/10 backdrop-blur-md rounded-3xl p-10 border border-white/20">
         <div class="text-2xl mb-4">❤️ Emotional Support</div>
         <p class="text-white/80 leading-relaxed font-light">Chat with our culturally-aware AI companion that understands your background, language, and emotional needs. Available 24/7 for judgment-free support.</p>

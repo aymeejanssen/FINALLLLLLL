@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
 body {
-  font-family: 'Montserrat', sans-serif;
+  @apply m-0 p-0 font-[Montserrat];
 }
 
-/* Optional: add your gradient */
 .wellness-gradient {
-  background: linear-gradient(135deg, #d0a7f2, #fbd8b5, #fbc2eb);
+  @apply bg-gradient-to-br from-[#c792df] via-[#fbc2eb] to-[#fcd6a4];
 }
 
+.card {
+  @apply bg-white/20 text-white p-8 rounded-3xl backdrop-blur-md border border-white/10;
+}
