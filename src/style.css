@@ -131,3 +131,7 @@ button:focus-visible {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
+.wellness-gradient {
+  @apply bg-gradient-to-br from-pink-300 via-purple-400 to-yellow-200;
+}
+
