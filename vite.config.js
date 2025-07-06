@@ -1,8 +1,10 @@
+// vite.config.js
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: '.', // root is the project folder where index.html is
+  root: './',
   build: {
     outDir: 'dist',
+    emptyOutDir: true,
   },
 });
