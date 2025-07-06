@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Do NOT use @apply for arbitrary values or font-families in Tailwind v4+ */
 body {
-  @apply m-0 p-0 font-[Montserrat];
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
 }
-
-.wellness-gradient {
-  @apply bg-gradient-to-br from-[#c792df] via-[#fbc2eb] to-[#fcd6a4];
-}
-
 .card {
   @apply bg-white/20 text-white p-8 rounded-3xl backdrop-blur-md border border-white/10;
 }
