@@ -1,4 +1,3 @@
-// main.js
 import './style.css';
 import { RealtimeAgent, RealtimeSession } from '@openai/agents-realtime';
 
@@ -49,54 +48,40 @@ document.querySelector('#app').innerHTML = `
         <button id="startButton" class="bg-white/20 hover:bg-white/30 text-white border border-white/30 backdrop-blur-sm px-12 py-6 text-lg font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
           Get Started →
         </button>
-        <div class="flex items-center gap-2 text-white/80">
+        <div class="flex items-center gap-2 text-white/80 mt-4 sm:mt-0">
           <span class="text-white">🛡️</span><span class="text-sm font-medium">Private & Secure</span>
         </div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-2xl mx-auto mb-32">
-        <div class="text-center">
-          <div class="text-4xl font-light mb-2">24/7</div>
-          <div class="text-white/80 font-medium">AI Support</div>
-        </div>
-        <div class="text-center">
-          <div class="text-4xl font-light mb-2">50+</div>
-          <div class="text-white/80 font-medium">Languages</div>
-        </div>
-        <div class="text-center">
-          <div class="text-4xl font-light mb-2">100%</div>
-          <div class="text-white/80 font-medium">Private</div>
-        </div>
+    </div>
+
+    <!-- Feature Cards Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-32 px-4">
+      <div class="bg-white/20 backdrop-blur-md rounded-3xl p-8 text-white text-center shadow-md transition-all duration-300">
+        <div class="text-4xl mb-4">❤️</div>
+        <h3 class="text-xl font-semibold mb-3">Emotional Support</h3>
+        <p class="text-sm leading-relaxed font-light">
+          Chat with our culturally-aware AI companion that understands your background, language, and emotional needs. Available 24/7 for judgment-free support.
+        </p>
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-md rounded-3xl p-8 text-white text-center shadow-md transition-all duration-300">
+        <div class="text-4xl mb-4">🧠</div>
+        <h3 class="text-xl font-semibold mb-3">Intelligent Coaching</h3>
+        <p class="text-sm leading-relaxed font-light">
+          Receive personalized guidance and coping strategies powered by advanced AI. Get practical exercises and insights tailored to your unique situation.
+        </p>
+      </div>
+
+      <div class="bg-white/20 backdrop-blur-md rounded-3xl p-8 text-white text-center shadow-md transition-all duration-300">
+        <div class="text-4xl mb-4">💬</div>
+        <h3 class="text-xl font-semibold mb-3">Instant Conversations</h3>
+        <p class="text-sm leading-relaxed font-light">
+          Start meaningful conversations anytime you need support. No appointments, no waiting – your AI wellness companion is always ready to listen and help.
+        </p>
       </div>
     </div>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-32 px-4">
-  <div class="card text-center">
-    <div class="text-2xl font-semibold mb-3">❤️ Emotional Support</div>
-    <p class="text-sm font-light">Chat with our culturally-aware AI companion that understands your background, language, and emotional needs. Available 24/7 for judgment-free support.</p>
-  </div>
-  <div class="card text-center">
-    <div class="text-2xl font-semibold mb-3">🧠 Intelligent Coaching</div>
-    <p class="text-sm font-light">Receive personalized guidance and coping strategies powered by advanced AI. Get practical exercises and insights tailored to your unique situation.</p>
-  </div>
-  <div class="card text-center">
-    <div class="text-2xl font-semibold mb-3">💬 Instant Conversations</div>
-    <p class="text-sm font-light">Start meaningful conversations anytime you need support. No appointments, no waiting – your AI wellness companion is always ready to listen and help.</p>
-  </div>
-</div>
-      <div class="bg-white/10 backdrop-blur-md rounded-3xl p-10 border border-white/20">
-        <div class="text-2xl mb-4">❤️ Emotional Support</div>
-        <p class="text-white/80 leading-relaxed font-light">Chat with our culturally-aware AI companion that understands your background, language, and emotional needs. Available 24/7 for judgment-free support.</p>
-      </div>
-      <div class="bg-white/10 backdrop-blur-md rounded-3xl p-10 border border-white/20">
-        <div class="text-2xl mb-4">🧠 Intelligent Coaching</div>
-        <p class="text-white/80 leading-relaxed font-light">Receive personalized guidance and coping strategies powered by advanced AI. Get practical exercises and insights tailored to your unique situation.</p>
-      </div>
-      <div class="bg-white/10 backdrop-blur-md rounded-3xl p-10 border border-white/20">
-        <div class="text-2xl mb-4">💬 Instant Conversations</div>
-        <p class="text-white/80 leading-relaxed font-light">Start meaningful conversations anytime you need support. No appointments, no waiting - your AI wellness companion is always ready to listen and help.</p>
-      </div>
-    </div>
-
+    <!-- Reviews Section -->
     <div class="mb-32 px-4">
       <div class="text-center mb-20">
         <h2 class="text-4xl md:text-5xl font-light mb-6 tracking-tight">Stories of Hope & Healing</h2>
@@ -117,6 +102,7 @@ document.querySelector('#app').innerHTML = `
       </div>
     </div>
 
+    <!-- Country Stats Section -->
     <div class="text-center">
       <p class="text-white/80 mb-8 font-light">Trusted by people from over 50 countries</p>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
@@ -131,6 +117,7 @@ document.querySelector('#app').innerHTML = `
   </div>
 `;
 
+// Realtime voice button logic
 document.getElementById('startButton').addEventListener('click', async () => {
   const agent = new RealtimeAgent({
     name: 'Assistant',
@@ -150,7 +137,4 @@ document.getElementById('startButton').addEventListener('click', async () => {
     console.error("❌ Failed to connect:", err);
   }
 });
-
-
-
 
